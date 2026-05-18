@@ -1,0 +1,4 @@
+interface:
+  display_name: "SQL Lineage Analysis"
+  short_description: "Analyze table and column lineage from SQL"
+  default_prompt: "Use $sql-lineage-analysis to analyze lineage for this SQL and output detailed table and column relationships."
