@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "用 $sql-lineage-analysis 分析这段 SQL 的表级和字段级血缘：create table mart.user_orders as select u.id as user_id, u.name, count(o.id) as order_cnt from ods.users u left join ods.orders o on u.id = o.user_id where u.status = 'active' group by u.id, u.name;",
+      "prompt": "用 /sql-lineage-analysis 分析这段 SQL 的表级和字段级血缘：create table mart.user_orders as select u.id as user_id, u.name, count(o.id) as order_cnt from ods.users u left join ods.orders o on u.id = o.user_id where u.status = 'active' group by u.id, u.name;",
       "expected_output": "报告应识别目标表 mart.user_orders、上游表 ods.users 和 ods.orders，并列出 user_id/name/order_cnt 的字段来源、join/filter/group by 影响条件和置信度。",
       "files": []
     },

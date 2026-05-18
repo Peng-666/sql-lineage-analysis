@@ -17,12 +17,12 @@ SQL Lineage Analysis 用于分析 SQL 的表级血缘和字段级血缘。它会
 
 **触发方式：**
 
-在 Codex 中输入 `$sql-lineage-analysis` 激活，或在对话中自然触发（当用户提到"SQL血缘分析"、"字段血缘"、"表血缘"、"血缘图"、"上游/下游关系"、"impact analysis"、"source-to-target mapping" 等表述时自动触发）。
+在 Codex 中输入 `/sql-lineage-analysis` 激活，或在对话中自然触发（当用户提到"SQL血缘分析"、"字段血缘"、"表血缘"、"血缘图"、"上游/下游关系"、"impact analysis"、"source-to-target mapping" 等表述时自动触发）。
 
 **使用示例：**
 
 ```text
-$sql-lineage-analysis 分析这段 SQL，输出 Markdown 文档，并包含表和字段血缘图：
+/sql-lineage-analysis 分析这段 SQL，输出 Markdown 文档，并包含表和字段血缘图：
 
 create table mart.user_orders as
 select u.id as user_id, u.name, count(o.id) as order_cnt
